@@ -1,0 +1,143 @@
+nav{	
+	position: fixed;
+	color:white;
+	background-color: #181C22;
+	font-size:16px;
+	width:100%;	
+	font-variant: small-caps;
+	z-index:10;
+	opacity:.7;
+	border-bottom: 1px solid green;
+	}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	
+}
+ul li {
+	display:inline;
+	padding:.5em;	
+	float: right;
+	}
+#name {
+	float:left;
+	font-size:20px;
+}
+.introduction {
+	margin-top: 50px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:15px;
+	padding:30px;
+}
+.introduction img{
+	float:left;
+	max-height:300px;
+	margin-right:1em;
+	border:rounded;
+	border-radius:5px;
+	clear:left;
+}
+body {
+	background-image: url("../img/background-md.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
+.rw-wrapper{
+	width: 80%;
+	position: relative;
+	margin: 110px auto 0 auto;
+	font-family: 'Bree Serif';
+	padding: 10px;
+}
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.rw-sentence span{
+	color: #444;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+	
+}
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #6b969d;
+}
+.rw-words-1 span{
+	animation: rotateWordsFirst 25s linear infinite 0s;
+}
+
+.rw-words span:nth-child(2) { 
+	animation-delay: 5s; 
+	color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 10s; 
+	color: #6b739d;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 15s; 
+	color: #7a6b9d;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 20s; 
+	color: #8d6b9d;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+#images a{
+	font-family: 'Bree Serif';
+	display:inline;
+	color: #444;
+	font-size:25px;
+}
+#images img {
+	max-height:200px;
+	padding:10px;
+}
+#homeIntro span{
+	font-size:60px;
+}
+footer {
+	position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+	border-top: 1px solid black;
+}
+footer .copyright {
+    text-align:right;
+    padding-right:10px;
+    font-size:13px;
+    margin-bottom:-10px;
+}
+#projects {
+	text-align:center;
+	font-size:30px;
+	margin-top:100px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	color:black;
+}
+.projIntro {
+	text-align:center;
+	border-bottom:1px solid black;
+	font-size:25px;
+	padding:30px;
+}

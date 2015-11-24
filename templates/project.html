@@ -1,0 +1,15 @@
+<div>
+    <h1 class = "projIntro"> Current Projects </h1>
+	
+  <div class="project" ng-repeat="project in projects">
+    <div id="images">
+		<a  target="_blank" href='{{project.link}}'>{{project.title}}</a>
+		<br>
+		<a class="title" target="_blank" href="{{project.link}}">
+		<img ng-src="{{project.image}}" class="project-img">
+		</a>
+	<p id="descript"  title="{{project.description}}">{{project.description}}</p>
+    </div>		
+   </div>
+
+</div>
